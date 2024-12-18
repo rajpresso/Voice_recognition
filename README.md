@@ -44,18 +44,18 @@
 - **빠른 성능 향상**과 loss 값의 **개선**
 - 시간이 부족해 더 많은 학습을 진행하지 못했지만, 추가 에폭을 돌렸다면 성능이 더욱 향상될 것으로 기대됨  
 
-![Whisper 성능 결과](trainningvalidation.png)
+![Whisper 성능 결과](images/trainningvalidation.png)
 
 #### **Wav2Vec 2.0**
 - **특정 문자열 반복** 문제를 발견하고, 이를 제거 후 성능이 향상됨
 - 필터링을 적용해 **40 에폭 이후**에도 성능 향상 지속  
 
-![Wav2Vec 성능 결과](wav2vec.png)
+![Wav2Vec 성능 결과](images/wav2vec.png)
 
 #### **최종 모델 선정**
 - **Wav2Vec 2.0** 모델이 가장 우수한 성능을 보였으며, **Learning rate**, **Batch size**, **Optimizer** 등을 조정하며 성능을 확인  
 
-![최종 모델 결과](wav2vec2.0.png)
+![최종 모델 결과](images/wav2vec2.0.png)
 
 ---
 
