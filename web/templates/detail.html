@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>회원관리</title>
+</head>
+<body>
+    <h1>회원정보</h1>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>선수ID</th>
+                <th>이름</th>
+                <th>팀이름</th>
+                <th>wight</th>
+                <th>height</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in result_table %}
+            <tr>
+                <td>{{ row.PLAYER_ID }}</td>
+                <td>{{ row['PLAYER_NAME'] }}</td>
+                <td>{{ row['TEAM_ID'] }}</td>
+                <td>{{ row['WEIGHT'] }}</td>
+                <td>{{ row['HEIGHT'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

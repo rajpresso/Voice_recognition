@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Information</title>
+    <style>
+        table , th , td{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Log Information</h1>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>선수ID</th>
+                <th>이름</th>
+                <th>상세보기</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in result_table %}
+            <tr>
+                <td>{{ row.player_id }}</td>
+                <td>{{ row.player_name }}</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:1113/detail?id={{row.player_id}}'">상세보기</button>
+          
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
